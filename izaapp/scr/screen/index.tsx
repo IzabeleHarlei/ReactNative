@@ -1,9 +1,12 @@
 import React from 'react';
-import {View, Text} from "react-native"
+import {View, Text,TextInput} from "react-native";
+import { styles } from './styles';
 export function SignIn() {
   return(
-    <View style={{flex:1, backgroundColor: 'red', alignItems: "center", justifyContent:'center'}}>
+    <View style={styles.container}>     
       <Text>Bom dia</Text>
+
+      <TextInput />
     </View>
   );
 }
