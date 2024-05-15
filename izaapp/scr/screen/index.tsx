@@ -1,12 +1,19 @@
-import React from 'react';
+
 import {View, Text,TextInput} from "react-native";
+import React, {useState} from "react";
 import { styles } from './styles';
-export function SignIn() {
+export function SignIn(){
+
+  const [text, setText] = useState ("Você não digitou nada ainda");
   return(
     <View style={styles.container}>     
-      <Text>Bom dia</Text>
+      <Text>Bom di</Text>
 
-      <TextInput />
+      <TextInput style={styles.input}
+      onChangeText={setText}/>
+      <Text>
+        Você digitou:{text}
+      </Text>
     </View>
   );
 }
