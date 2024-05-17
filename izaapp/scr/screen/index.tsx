@@ -4,15 +4,15 @@ import React, {useState} from "react";
 import { styles } from './styles';
 export function SignIn(){
 
-  const [text, setText] = useState ("Você não digitou nada ainda");
+  const [text, setText] = useState ("(você não digitou nada ainda)");
   return(
     <View style={styles.container}>     
-      <Text>Bom di</Text>
+      <Text>Bom dia</Text>
 
-      <TextInput style={styles.input}
-      onChangeText={setText}/>
+      <TextInput style={styles.input} onChangeText={setText}/>
+      
       <Text>
-        Você digitou:{text}
+        Você digitou : {text}
       </Text>
     </View>
   );

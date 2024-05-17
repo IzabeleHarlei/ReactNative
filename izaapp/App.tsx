@@ -1,12 +1,10 @@
 import React from 'react';
-import {View, Text} from "react-native"
+import {View, Text} from "react-native";
 import { SignIn } from './scr/screen';
 
-export default function App() {
+export default function app() {
   return(
-    <View>
-      <Text>Bom dia</Text>
-    </View>
+   <SignIn/> 
   );
 }
 
