@@ -1,14 +1,14 @@
 
-import {View, Text,TextInput,Image} from "react-native";
+import {View, Text,TextInput,Image, StatusBar} from "react-native";
 import React, {useState} from "react";
 import { styles } from './styles';
 import IllustratuionImg from '../assets/illustration.png';
-import { StatusBar } from "expo-status-bar";
+
 
 export function SignIn(){
 return(
   <View style={styles.container}>
-    <StatusBar barStyle= 'light-content' backgroundColor={"transparent"} transLucent />
+    <StatusBar barStyle= 'light-content' backgroundColor={"transparent"} translucent />
      <Image source={IllustratuionImg} /> 
   <View style={styles.content}> 
       
