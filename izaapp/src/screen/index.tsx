@@ -3,7 +3,7 @@ import {View, Text,TextInput,Image, StatusBar} from "react-native";
 import React, {useState} from "react";
 import { styles } from './styles';
 import IllustratuionImg from '../assets/illustration.png';
-
+import {ButtonIcon} from '../components/Buttonlcon';
 
 export function SignIn(){
 return(
@@ -22,6 +22,7 @@ return(
       favoritos com seus amigos
 
     </Text>
+    <ButtonIcon/>
   </View>
   </View>
 );
